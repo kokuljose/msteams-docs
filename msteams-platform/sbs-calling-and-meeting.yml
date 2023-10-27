@@ -132,6 +132,7 @@ items:
     1. Run Windows PowerShell PSI as an administrator and execute the script.
 
         ```PowerShell
+        Connect-MicrosoftTeams
         New-CsApplicationAccessPolicy -Identity "<<policy-identity/policy-name>>" -AppIds "<<azure-client-id>>" -Description "Policy-description"
         Grant-CsApplicationAccessPolicy -PolicyName "<<policy-identity/policy-name>>" -Identity "<<object-id-of-the-user-to-whom-policy-need-to-be-granted>>"
         ```
